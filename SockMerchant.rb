@@ -11,7 +11,18 @@ def sockMerchant(_n, ar)
   # output: number of matching pairs of socks
   socks = {}
   ar.each do |sock|
+    if socks.key? sock
+      socks[sock] += 1
+    else
+      socks[sock] = 1
+    end
   end
+
+  count = 0
+  socks.each_value do |sock|
+    count += sock / 2
+  end
+  count
 end
 
 fptr = File.open(ENV['OUTPUT_PATH'], 'w')
