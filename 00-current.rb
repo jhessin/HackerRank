@@ -3,8 +3,11 @@
 
 #
 # Complete the getMoneySpent function below.
+# keyboards: an array of integers representing keyboard prices
+# drives: an array of integers representing drive prices
+# budget: How much is in the budget
 #
-def get_money_spent(keyboards, drives, currency)
+def get_money_spent(keyboards, drives, budget)
   #
   # Write your code here.
   #
